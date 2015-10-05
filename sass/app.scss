@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+$brand-primary: #2C9CCD;
+$site-gray: #FCFCFC;
+$font-size-base: 18px;
+$font-family-base: 'Open Sans', sans-serif;
+$navbar-default-color: $brand-primary;
+$navbar-default-bg: #fff;
+$navbar-default-link-color: $brand-primary;
+$navbar-default-link-hover-color: $brand-primary;
+$navbar-height: 75px;
+$navbar-margin-bottom: 0;
+
+@import "bootstrap";
+
+html {
+    font-size: $font-size-base;
+}
+
+body {
+    background-color: $site-gray;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.row {
+    padding: 2rem 0;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.navbar-nav {
+    a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &:hover {
+            padding-bottom: 13px;
+            border-bottom: 2px solid $brand-primary;
+        }
+    }
+}
+
+.navbar-right {
+    margin-right: 10px;
+}
+
+#logo {
+    padding-top: 7px;
+
+    img {
+        width: 200px;
+    }
+}
+
+#splash,
+#navigation {
+    padding: 0;
+}
+
+#splash {
+    max-height: 65vh;
+    overflow: hidden;
+
+    .header {
+        margin-top: 10%;
+        position: absolute;
+        width: 100%;
+        @extend .text-right;
+
+        span {
+            margin-right: 10%;
+            padding: 6px;
+            color: #fff;
+            background-color: $brand-primary;
+            font: {
+                weight: 300;
+                size: 3rem;
+            }
+        }
+    }
+}
+
+#how-it-works {
+    .col-md-4 {
+        @extend .text-center;
+    }
+
+    .octicon {
+        font-size: 48px;
+    }
+
+    span {
+        margin-bottom: 20px;
+        padding: 30px;
+        border: 4px solid $brand-primary;
+        border-radius: 50%;
+    }
+}
+
+#sign-up {
+    color: $site-gray;
+    background-color: $brand-primary;
+    @extend .text-center;
+
+    a {
+        margin: 0 auto;
+        color: $site-gray;
+        padding: 1rem;
+        border: solid 1px $site-gray;
+        border-radius: 7px;
+
+        &:hover {
+            text-decoration: none;
+            color: $brand-primary;
+            background-color: $site-gray;
+        }
+    }
+}
+
+footer {
+    padding: 10px;
+    color: #fff;
+    background-color: #000;
+    font-size: 12px;
+    @extend .row;
+
+    & > span {
+        @extend .pull-right;
+    }
+}
