@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Tag Deploy</title>
+
+    <link rel="stylesheet" href="fonts/octicons.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row" id="navigation">
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/" id="logo">
+                    <img src="img/tagdeploy.png" alt="Tag Deploy Logo">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="nav-links" href="#how-it-works">How it works</a></li>
+                    <li><a class="nav-links" href="#sign-up">Sign up</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+
+    <div class="row" id="splash">
+        <div class="header">
+            <span>Tag management just became stupid easy.</span>
+        </div>
+        <img src="img/looking-at-data.jpg" alt="People Looking at Data">
+    </div>
+
+    <div class="row" id="how-it-works">
+        <h1 class="text-center">How it works</h1>
+        <div class="col-md-4">
+            <span class="octicon octicon-code"></span>
+            <p>First, you make some changes to your tags in a Git repo that holds all your tags.</p>
+        </div>
+        <div class="col-md-4">
+            <span class="octicon octicon-cloud-upload"></span>
+            <p>Next, push your changes up to your remote repo on Github.</p>
+        </div>
+        <div class="col-md-4">
+            <span class="octicon octicon-globe"></span>
+            <p>Sit back and relax as your tags are pushed to GTM to then be introduced to the world!</p>
+        </div>
+    </div>
+
+    <div class="row" id="sign-up">
+        <div class="col-md-6 col-md-offset-3">
+            <div id="beta-access-form-container">
+                <h1 class="text-center">Let's get started.</h1>
+                <p>We are currently in a closed beta.  If you would like access, fill out the form below, and we will contact you when you are given access.</p>
+
+                <form id="beta-access-form" >
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Please enter your email" />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Give me access!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2017 Tag Deploy
+        <span>
+            <span class="octicon octicon-pencil"></span> with <span class="octicon octicon-heart"></span> in Cincinnati.
+        </span>
+    </footer>
+</div>
+
+<script src="js/app.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41475277-8', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -8,14 +8,19 @@
 
     $('#beta-access-form').on('submit', function(e) {
         e.preventDefault();
+        var sendData = {};
         var formData = $(this).serializeArray();
-        var postData = { email: formData[0]['value'] };
+        for(var x=0;x<formData.length;x++) {
+            sendData[formData[x]["name"]] = formData[x]["value"];
+        }
+        console.log(sendData);
 
-        $.post('http://app.tagdeploy.com/contact', postData, function(res) {
+        $.post('https://app.tagdeploy.com/contact', sendData, function(res) {
             console.log(res);
             var successMessage = $('<p/>', {
-                text: 'Thank you!  We will contact you when there are open spots for the beta version.'
+                text: 'Thank you!  We will contact you shortly.'
             });
+            successMessage.addClass('alert alert-success');
 
             $('#beta-access-form-container').empty().append(successMessage);
         });

@@ -1,0 +1,34 @@
+{
+  "name": "tag-deploy.github.io",
+  "version": "1.0.0",
+  "description": "Tag Deploy Website ==================",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tag-deploy/tag-deploy.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tag-deploy/tag-deploy.github.io/issues"
+  },
+  "homepage": "https://github.com/tag-deploy/tag-deploy.github.io#readme",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "del": "^2.2.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1",
+    "octicons": "^5.0.1"
+  }
+}
