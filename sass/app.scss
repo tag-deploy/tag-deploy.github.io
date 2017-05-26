@@ -34,6 +34,7 @@ body {
 
 .navbar-wrapper {
     background-color: $dark-blue;
+    background-image: url('../img/tile.png');
 
     .navbar {
         background: none;
@@ -195,6 +196,7 @@ body {
     color: $dark-grey;
     text-align: center;
     padding: 40px 0;
+    border-top: 2px solid #ddd;
 
     .align-left {
         line-height: 200%;

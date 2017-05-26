@@ -5826,7 +5826,8 @@ body {
   text-align: right; }
 
 .navbar-wrapper {
-  background-color: #056690; }
+  background-color: #056690;
+  background-image: url("../img/tile.png"); }
   .navbar-wrapper .navbar {
     background: none;
     border: 0; }
@@ -5958,7 +5959,8 @@ body {
   background-color: #eaeaea;
   color: #555;
   text-align: center;
-  padding: 40px 0; }
+  padding: 40px 0;
+  border-top: 2px solid #ddd; }
   .footer .align-left {
     line-height: 200%; }
   .footer i {
